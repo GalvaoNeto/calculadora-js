@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="toggleTheme">🌞/🌙</button>
+    </div>
+
+    <div class="calculator">
+        <h2>Calculadora</h2>
+        <input type="number" id="firstNumber" placeholder="Número 1">
+        
+        <div class="buttons">
+            <button onclick="calculate('+')">+</button>
+            <button onclick="calculate('-')">−</button>
+            <button onclick="calculate('*')">×</button>
+            <button onclick="calculate('/')">÷</button>
+        </div>
+
+        <input type="number" id="secondNumber" placeholder="Número 2">
+        
+        <div class="result-box">
+            <p id="result">Resultado</p>
+            <button id="copyResult">📋</button>
+        </div>
+
+        <button id="clear" onclick="clearFields()">LIMPAR</button>
+
+        <button id="toggleHistory">Mostrar Histórico</button>
+        
+        <div id="history-container" class="hidden">
+            <h3>Histórico</h3>
+            <ul id="history"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

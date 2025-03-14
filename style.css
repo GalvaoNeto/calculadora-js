@@ -1,0 +1,154 @@
+/* Estilo base */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+/* Tema Claro/Escuro */
+:root {
+    --bg-color: #2c2c54;
+    --text-color: white;
+    --box-bg: white;
+    --button-bg: #6c5ce7;
+    --button-hover: #4834d4;
+}
+
+.light-mode {
+    --bg-color: white;
+    --text-color: black;
+    --box-bg: #f5f5f5;
+    --button-bg: #4a69bd;
+    --button-hover: #3b518b;
+}
+
+/* Botão de alternar tema */
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#toggleTheme {
+    background: var(--button-bg);
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* Caixa da Calculadora */
+.calculator {
+    background: var(--box-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    transition: 0.3s;
+}
+
+h2, h3 {
+    color: var(--text-color);
+}
+
+input {
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    color: black;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+    transform: scale(1.1);
+}
+
+.result-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#copyResult {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+#clear {
+    background-color: #d63031;
+}
+
+#clear:hover {
+    background-color: #c0392b;
+}
+
+#history-container {
+    margin-top: 15px;
+    padding: 10px;
+    background: var(--box-bg);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+#toggleHistory {
+    background-color: #0984e3;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#toggleHistory:hover {
+    background-color: #74b9ff;
+}
+
+.hidden {
+    display: none;
+}
+
+#history {
+    list-style: none;
+    padding: 0;
+}
+
+#history li {
+    background: var(--box-bg);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
