@@ -10,7 +10,7 @@ Uma calculadora moderna feita com HTML, CSS e JavaScript.
 - Botão para copiar resultado 📋
 
 ## 🚀 Como acessar?
-Acesse aqui: [Calculadora Online](https://seu-usuario.github.io/calculadora-js/)
+Acesse aqui: [Calculadora Online](https://galvaoneto.github.io/calculadora-js/)
 
 ## 🛠️ Tecnologias usadas
 - HTML5
